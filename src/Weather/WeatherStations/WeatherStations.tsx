@@ -30,11 +30,16 @@ const WeatherStations = () => {
 
 	const { mutate } = useMutation({
 		mutationFn: async (id: string): Promise<Station> => {
-			return await axios.delete(`api/data/3.0/stations/${id}?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`, {
-				headers: {
-					'Content-Type': 'application/json',
-				},
-			});
+			return await axios.delete(
+				`${
+					import.meta.env.DEV ? 'api' : 'https://api.openweathermap.org'
+				}/data/3.0/stations/${id}?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`,
+				{
+					headers: {
+						'Content-Type': 'application/json',
+					},
+				}
+			);
 		},
 		onSuccess: () => {
 			queryClient.invalidateQueries(['weatherStations'], { exact: true });
