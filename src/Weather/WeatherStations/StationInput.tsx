@@ -55,9 +55,7 @@ const StationInput = ({ show }: Props) => {
 	const { mutate } = useMutation({
 		mutationFn: async (newStation: Station): Promise<Station> => {
 			return await axios.post(
-				`${
-					import.meta.env.DEV ? 'api' : 'https://api.openweathermap.org'
-				}/data/3.0/stations?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`,
+				`api/data/3.0/stations?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`,
 				newStation,
 				{
 					headers: {
