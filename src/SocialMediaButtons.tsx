@@ -76,7 +76,8 @@ const SocialMediaButtons = () => {
 			</LinkedInButton>
 			<GithubButton
 				{...{
-					onClick: () => window.open('https://github.com/J4v4Scr1pt/QL-Challange', '_blank'),
+					onClick: () =>
+						window.open('https://github.com/J4v4Scr1pt/northern-tech-challenge', '_blank'),
 				}}>
 				<GithubBar />
 			</GithubButton>

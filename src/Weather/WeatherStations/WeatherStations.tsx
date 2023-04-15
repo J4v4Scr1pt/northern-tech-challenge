@@ -22,7 +22,7 @@ const WeatherStations = () => {
 		queryKey: ['weatherStations'],
 		queryFn: async (): Promise<Array<Station>> => {
 			const { data } = await axios.get(
-				`http://api.openweathermap.org/data/3.0/stations?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`
+				`https://api.openweathermap.org/data/3.0/stations?appid=37f2a3dee1cf7dec9f2f1588ba69a71f`
 			);
 			return data;
 		},
