@@ -141,12 +141,14 @@ const About = () => {
 			</span>
 			<h2>Continue development</h2>
 			<span>
-				I would write more tests that includes mocked API calls. Remove the hardcoded API keys and add
-				them as environment variables in Vercel. Look in to the issue when pressing F5 in production
-				that results in a 404 (This works locally and could be do to how the routing is setup.) I
-				would also add more types to be able ro remove some use of the aweful &apos;any&apos; word.
-				Handle the inital animation of the slider button on Weather forcast tab not to fire. change
-				the &apos;:has&apos; css-selector because FireFox has currently limited support for it.
+				Enhance the user experience with better visual feedback, like tooltip, loading
+				spinners/skeleton-loading, inputfield/button feedback, etc. I would write more tests that
+				includes mocked API calls. Remove the hardcoded API keys and add them as environment variables
+				in Vercel. Look in to the issue when pressing F5 in production that results in a 404 (This
+				works locally and could be do to how the routing is setup.) I would also add more types to be
+				able ro remove some use of the aweful &apos;any&apos; word. Handle the inital animation of the
+				slider button on Weather forcast tab not to fire. change the &apos;:has&apos; css-selector
+				because FireFox has currently limited support for it.
 			</span>
 		</Wrapper>
 	);
