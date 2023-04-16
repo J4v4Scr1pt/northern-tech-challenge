@@ -3,6 +3,7 @@
 		{
 			"source": "/weather/api/:path*",
 			"destination": "https://api.openweathermap.org/:path*"
-		}
+		},
+		{ "source": "/(.*)", "destination": "/" }
 	]
 }
