@@ -3,21 +3,21 @@ interface Weather {
     icon: string;
     main: string;
     description: string;
-};
+}
 
 interface Coordinates {
     lat: number;
     lon: number;
-};
+}
 
 interface City {
     name: string;
-};
+}
 
 interface Main {
     temp_max: string;
     temp_min: string;
-};
+}
 
 interface CurrentWeather {
     name: string;
@@ -26,4 +26,4 @@ interface CurrentWeather {
     coord: Coordinates;
     list: Array<any>;
     main: Main;
-};
+}
