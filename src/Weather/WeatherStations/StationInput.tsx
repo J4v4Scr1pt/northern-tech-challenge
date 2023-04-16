@@ -26,7 +26,7 @@ const Wrapper = styled.div<{ show: boolean }>`
 	}
 `;
 
-const Wrapper2 = styled.div`
+const InnerWrapper = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -106,7 +106,7 @@ const StationInput = ({ show }: Props) => {
 
 	return (
 		<Wrapper {...{ show }}>
-			<Wrapper2>
+			<InnerWrapper>
 				<Input {...{ onChange: onChangeName, value: weatherStation.name, placeholder: 'Name' }} />
 				<Input
 					{...{
@@ -133,7 +133,7 @@ const StationInput = ({ show }: Props) => {
 					}}
 				/>
 				<Button {...{ onClick, label: 'Save', disabled: !canSave }} />
-			</Wrapper2>
+			</InnerWrapper>
 			{error.length > 0 && <span>Error: {error}</span>}
 		</Wrapper>
 	);
